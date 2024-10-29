@@ -153,7 +153,7 @@ void loop() {
   // LED, turn on with value?
   //  represents relative CO2 emissions
   ledColour[0] = map(greenhouseEmissions[province], 0, 270, 0, 255);
-  ledColour[1] = map(greenhouseEmissions[province], 0, 270, 255, 0);
+  ledColour[2] = map(greenhouseEmissions[province], 0, 270, 255, 0);
   setColor(ledColour[0], ledColour[1], ledColour[2]);
 
   /*
